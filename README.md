@@ -1,5 +1,5 @@
 # Web personal · José da Silva
-
+Visualitzar Web currículum  'https://josedaaaasilva-code.github.io/Curriculum-jose-web/'
 Web de presentació professional amb **currículum** i **carta de presentació**, en **català, castellà i anglès**. Cada document té la seva pàgina, amb mode clar i fosc, i es publica a **GitHub Pages**.
 
 ## Pàgines
@@ -10,21 +10,7 @@ Web de presentació professional amb **currículum** i **carta de presentació**
 | Currículum | `/cv/` | `/es/cv/` | `/en/cv/` |
 | Carta de presentació | `/carta/` | `/es/carta/` | `/en/carta/` |
 
-## Posar-lo en marxa
 
-Cal Node 20 o superior.
-
-```bash
-npm install
-npm run dev      # http://localhost:3000
-```
-
-Per generar la versió publicable:
-
-```bash
-npm run build    # deixa el resultat a dist/
-npm run preview  # comprova dist/ en local
-```
 
 ## Publicar a GitHub Pages
 
