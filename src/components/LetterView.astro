@@ -1,0 +1,46 @@
+---
+import type { Content } from '../content/types';
+import { pathFor } from '../lib/paths';
+
+interface Props {
+  c: Content;
+}
+
+const { c } = Astro.props;
+const lang = c.lang;
+const letter = c.letter;
+---
+
+<header class="wrap page-head">
+  <p class="eyebrow">{letter.eyebrow}</p>
+  <h1 class="page-head__title">{letter.title}</h1>
+  <p class="page-head__lead">{letter.lead}</p>
+  <div class="hero__actions">
+    <button class="btn btn--ghost" type="button" data-print>{letter.printLabel}</button>
+    <a class="text-link" href={pathFor(lang, 'cv')}>{letter.cvCta}</a>
+  </div>
+</header>
+
+<div class="wrap letter-wrap">
+  <article class="letter">
+    <p class="letter__place">{letter.place}</p>
+    <p class="letter__greeting">{letter.greeting}</p>
+
+    <div class="letter__body">
+      {letter.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+
+    <p class="letter__closing">{letter.closing}</p>
+    <p class="letter__sign">{letter.signature}</p>
+    <p class="letter__role">{letter.signatureRole}</p>
+    <p class="letter__contact">
+      <a href={`mailto:${c.site.email}`}>{c.site.email}</a>
+      <span aria-hidden="true">·</span>
+      <a href={c.site.github} rel="me noopener" target="_blank">
+        {c.site.github.replace('https://', '')}
+      </a>
+      <span aria-hidden="true">·</span>
+      <span>{c.site.location}</span>
+    </p>
+  </article>
+</div>

@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LetterView from '../components/LetterView.astro';
+import { content } from '../content';
+
+const c = content.ca;
+---
+
+<BaseLayout lang="ca" page="letter" title={c.letter.meta.title} description={c.letter.meta.description}>
+  <LetterView c={c} />
+</BaseLayout>

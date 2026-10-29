@@ -1,0 +1,23 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeView from '../../components/HomeView.astro';
+import { content, isLang } from '../../content';
+
+export const getStaticPaths = (() => [
+  { params: { lang: 'es' } },
+  { params: { lang: 'en' } },
+]) satisfies GetStaticPaths;
+
+const { lang } = Astro.params;
+
+if (!lang || !isLang(lang)) {
+  throw new Error(`Idioma desconegut: ${lang}`);
+}
+
+const c = content[lang];
+---
+
+<BaseLayout lang={lang} page="home" title={c.home.meta.title} description={c.home.meta.description}>
+  <HomeView c={c} />
+</BaseLayout>

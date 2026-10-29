@@ -1,0 +1,178 @@
+---
+import type { Content } from '../content/types';
+import Section from './Section.astro';
+import ContactGrid from './ContactGrid.astro';
+import { pathFor } from '../lib/paths';
+
+interface Props {
+  c: Content;
+}
+
+const { c } = Astro.props;
+const lang = c.lang;
+---
+
+<div class="wrap hero">
+  <div class="hero__grid">
+    <div>
+      <p class="eyebrow">{c.hero.eyebrow}</p>
+      <h1 class="hero__title">{c.site.name}</h1>
+      <p class="hero__subtitle">{c.hero.subtitle}</p>
+      <p class="hero__intro">{c.hero.intro}</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contacte">{c.nav.contact}</a>
+        <button class="btn btn--ghost" type="button" data-print>{c.ui.print}</button>
+        <a class="text-link" href={pathFor(lang, 'letter')}>{c.nav.letter}</a>
+      </div>
+      <p class="hero__print-hint">{c.ui.printHint}</p>
+    </div>
+
+    <aside class="idcard" aria-label={c.profile.title}>
+      <div class="idcard__mark" aria-hidden="true">{c.site.initials}</div>
+      <p class="status">
+        <span class="status__dot" aria-hidden="true"></span>
+        <span class="status__text">
+          <span class="status__label">{c.ui.statusLabel}</span>
+          {c.site.availability}
+        </span>
+      </p>
+      <dl class="idcard__facts">
+        {
+          c.hero.facts.map((fact) => (
+            <div class="idcard__fact">
+              <dt>{fact.label}</dt>
+              <dd>{fact.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </aside>
+  </div>
+</div>
+
+<Section id="perfil" number="01" title={c.profile.title} lead={c.profile.lead}>
+  <div class="prose">
+    {c.profile.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+  </div>
+</Section>
+
+<Section id="experiencia" number="02" title={c.experience.title} lead={c.experience.lead}>
+  <div class="timeline">
+    {
+      c.experience.items.map((job) => (
+        <article class="job">
+          <p class="job__period">{job.period}</p>
+          <div>
+            <h3 class="job__role">{job.role}</h3>
+            <p class="job__org">
+              {job.org} <span>· {job.place}</span>
+            </p>
+            <p class="job__summary">{job.summary}</p>
+            <ul class="bullets">
+              {job.bullets.map((bullet) => <li>{bullet}</li>)}
+            </ul>
+            <ul class="tags">
+              {job.tags.map((tag) => <li class="tag">{tag}</li>)}
+            </ul>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+
+  <div class="other-work">
+    <p class="subhead">{c.experience.otherTitle}</p>
+    {
+      c.experience.other.map((job) => (
+        <article class="job">
+          <p class="job__period">{job.period}</p>
+          <div>
+            <h3 class="job__role">
+              {job.role} <span class="job__org">· {job.org}</span>
+            </h3>
+            <p class="job__summary">{job.summary}</p>
+            <ul class="bullets">
+              {job.bullets.map((bullet) => <li>{bullet}</li>)}
+            </ul>
+            <ul class="tags">
+              {job.tags.map((tag) => <li class="tag">{tag}</li>)}
+            </ul>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</Section>
+
+<Section id="formacio" number="03" title={c.education.title} lead={c.education.lead}>
+  <div class="studies">
+    {
+      c.education.items.map((study) => (
+        <article class="study">
+          <p class="study__period">{study.period}</p>
+          <div>
+            <span class="badge">{study.status}</span>
+            <h3 class="study__title">{study.title}</h3>
+            <p class="study__org">
+              {study.org} <span>· {study.place}</span>
+            </p>
+            {study.detail && <p class="study__detail">{study.detail}</p>}
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</Section>
+
+<Section id="competencies" number="04" title={c.skills.title} lead={c.skills.lead}>
+  <div class="skills">
+    {
+      c.skills.groups.map((group) => (
+        <div class="skill-group">
+          <h3>{group.title}</h3>
+          <ul class="chips">
+            {group.items.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</Section>
+
+<Section id="projectes" number="05" title={c.projects.title} lead={c.projects.lead}>
+  <div class="projects">
+    {
+      c.projects.items.map((project) => (
+        <article class="project">
+          <p class="project__period">{project.period}</p>
+          <h3 class="project__title">{project.title}</h3>
+          <p class="project__summary">{project.summary}</p>
+          <ul class="bullets">
+            {project.bullets.map((bullet) => <li>{bullet}</li>)}
+          </ul>
+          <ul class="tags">
+            {project.tags.map((tag) => <li class="tag">{tag}</li>)}
+          </ul>
+        </article>
+      ))
+    }
+  </div>
+</Section>
+
+<Section id="idiomes" number="06" title={c.languages.title} lead={c.languages.lead}>
+  <ul class="langs">
+    {
+      c.languages.items.map((item) => (
+        <li class="lang-item">
+          <p class="lang-item__name">{item.name}</p>
+          <p class="lang-item__level">{item.level}</p>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<Section id="contacte" number="07" title={c.contact.title}>
+  <ContactGrid c={c} />
+</Section>

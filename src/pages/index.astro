@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeView from '../components/HomeView.astro';
+import { content } from '../content';
+
+const c = content.ca;
+---
+
+<BaseLayout lang="ca" page="home" title={c.home.meta.title} description={c.home.meta.description}>
+  <HomeView c={c} />
+</BaseLayout>

@@ -1,0 +1,82 @@
+---
+import type { Content } from '../content/types';
+import Section from './Section.astro';
+import ContactGrid from './ContactGrid.astro';
+import { pathFor } from '../lib/paths';
+
+interface Props {
+  c: Content;
+}
+
+const { c } = Astro.props;
+const lang = c.lang;
+---
+
+<div class="wrap hero">
+  <div class="hero__grid">
+    <div>
+      <p class="eyebrow">{c.hero.eyebrow}</p>
+      <h1 class="hero__title">{c.site.name}</h1>
+      <p class="hero__subtitle">{c.hero.subtitle}</p>
+      <p class="hero__intro">{c.hero.intro}</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href={pathFor(lang, 'cv')}>{c.home.primaryCta}</a>
+        <a class="btn btn--ghost" href={pathFor(lang, 'letter')}>{c.home.secondaryCta}</a>
+      </div>
+    </div>
+
+    <aside class="idcard" aria-label={c.profile.title}>
+      <div class="idcard__mark" aria-hidden="true">{c.site.initials}</div>
+      <p class="status">
+        <span class="status__dot" aria-hidden="true"></span>
+        <span class="status__text">
+          <span class="status__label">{c.ui.statusLabel}</span>
+          {c.site.availability}
+        </span>
+      </p>
+      <dl class="idcard__facts">
+        {
+          c.hero.facts.map((fact) => (
+            <div class="idcard__fact">
+              <dt>{fact.label}</dt>
+              <dd>{fact.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </aside>
+  </div>
+</div>
+
+<Section id="aportacio" number="01" title={c.home.highlightsTitle}>
+  <div class="highlights">
+    {
+      c.home.highlights.map((item, index) => (
+        <article class="highlight" data-reveal style={`--i:${index}`}>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))
+    }
+  </div>
+</Section>
+
+<Section id="documents" number="02" title={c.home.sectionsTitle}>
+  <div class="cards">
+    {
+      c.home.cards.map((card, index) => (
+        <a class="card-link" href={pathFor(lang, card.key)} data-reveal style={`--i:${index}`}>
+          <span class="card-link__num" aria-hidden="true">{card.number}</span>
+          <span class="card-link__title">{card.title}</span>
+          <span class="card-link__text">{card.text}</span>
+          <span class="card-link__cta">{card.cta} →</span>
+        </a>
+      ))
+    }
+  </div>
+</Section>
+
+<Section id="contacte" number="03" title={c.contact.title}>
+  <ContactGrid c={c} />
+</Section>

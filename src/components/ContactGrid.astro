@@ -1,0 +1,49 @@
+---
+import type { Content } from '../content/types';
+
+interface Props {
+  c: Content;
+}
+
+const { c } = Astro.props;
+---
+
+<div class="contact__grid">
+  <div>
+    <p class="contact__lead">{c.contact.lead}</p>
+    <a class="contact__mail" href={`mailto:${c.site.email}`}>{c.site.email}</a>
+    <p class="contact__note">{c.contact.note}</p>
+  </div>
+
+  <dl class="contact-list">
+    <div class="contact-list__row">
+      <dt>{c.contact.emailLabel}</dt>
+      <dd><a href={`mailto:${c.site.email}`}>{c.site.email}</a></dd>
+    </div>
+    <div class="contact-list__row">
+      <dt>{c.contact.phoneLabel}</dt>
+      <dd>
+        <button
+          class="phone-reveal"
+          type="button"
+          data-phone={c.site.phoneDisplay}
+          data-phone-href={c.site.phoneHref}
+        >
+          {c.contact.phoneReveal}
+        </button>
+      </dd>
+    </div>
+    <div class="contact-list__row">
+      <dt>{c.contact.locationLabel}</dt>
+      <dd>{c.site.location}</dd>
+    </div>
+    <div class="contact-list__row">
+      <dt>{c.contact.githubLabel}</dt>
+      <dd>
+        <a href={c.site.github} rel="me noopener" target="_blank">
+          {c.site.github.replace('https://', '')}
+        </a>
+      </dd>
+    </div>
+  </dl>
+</div>

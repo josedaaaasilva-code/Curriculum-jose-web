@@ -1,0 +1,32 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+.dev-server.log
+.build-pages.log
+
+# environment
+.env
+.env.*
+
+# system
+.DS_Store
+Thumbs.db
+
+# local dev server log
+.dev.log
+
+# export
+*.zip
+*.tar.gz
+
+# logs
+*.log
+
+# runtime
+*.pid

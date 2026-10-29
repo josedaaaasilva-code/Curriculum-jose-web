@@ -1,0 +1,23 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LetterView from '../../components/LetterView.astro';
+import { content, isLang } from '../../content';
+
+export const getStaticPaths = (() => [
+  { params: { lang: 'es' } },
+  { params: { lang: 'en' } },
+]) satisfies GetStaticPaths;
+
+const { lang } = Astro.params;
+
+if (!lang || !isLang(lang)) {
+  throw new Error(`Idioma desconegut: ${lang}`);
+}
+
+const c = content[lang];
+---
+
+<BaseLayout lang={lang} page="letter" title={c.letter.meta.title} description={c.letter.meta.description}>
+  <LetterView c={c} />
+</BaseLayout>

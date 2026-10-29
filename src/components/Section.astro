@@ -1,0 +1,23 @@
+---
+interface Props {
+  id: string;
+  number: string;
+  title: string;
+  lead?: string;
+}
+
+const { id, number, title, lead } = Astro.props;
+---
+
+<section class="section" id={id} aria-labelledby={`${id}-title`} data-reveal>
+  <div class="wrap">
+    <div class="section__head">
+      <p class="section__num" aria-hidden="true">{number}</p>
+      <div>
+        <h2 class="section__title" id={`${id}-title`}>{title}</h2>
+        {lead && <p class="section__lead">{lead}</p>}
+      </div>
+    </div>
+    <slot />
+  </div>
+</section>

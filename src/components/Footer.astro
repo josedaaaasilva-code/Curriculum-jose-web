@@ -1,0 +1,25 @@
+---
+import { content } from '../content';
+import type { Lang } from '../content/types';
+import { pathFor } from '../lib/paths';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const c = content[lang];
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap footer__inner">
+    <p>© {year} {c.site.name} · {c.footer.line}</p>
+    <div class="footer__right">
+      <p>{c.ui.madeWith}</p>
+      <p>{c.ui.updated}</p>
+      <a href="#top">{c.ui.backToTop}</a>
+      <a href={pathFor(lang)}>{c.nav.home}</a>
+    </div>
+  </div>
+</footer>
