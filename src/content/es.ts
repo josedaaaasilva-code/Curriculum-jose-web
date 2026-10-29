@@ -104,7 +104,7 @@ export const es: Content = {
     },
     lead: "Soy técnico en sistemas y redes. Esta web es mi currículum: qué sé hacer, qué he hecho y cómo me presento.",
     intro:
-      "Me llamo José da Silva y soy de Tordera. Empecé en la informática abriendo ordenadores viejos en casa, y todavía no he parado: ahora estoy terminando ASIR y me dedico a que la tecnología funcione para quien la usa. Soy práctico, ordenado y con trato con la gente; me gusta dejar las cosas mejor de como las encuentro y aprender cada día. Esta misma web la he hecho yo.",
+      "Me llamo José da Silva y soy de Tordera. Empecé en la informática abriendo ordenadores viejos en casa, y todavía no he parado: ahora estoy terminando ASIR y me dedico a que la tecnología funcione para quien la usa. Soy práctico, ordenado y con trato con la gente; me gusta dejar las cosas mejor de como las encuentro y aprender cada día.",
     primaryCta: "Ver el currículum",
     secondaryCta: "Leer la carta",
     sectionsTitle: "Los documentos",
@@ -140,7 +140,7 @@ export const es: Content = {
       },
       {
         title: "Automatización y web",
-        text: "Scripts en Bash y PowerShell, Git y esta misma web hecha con Astro: si hay que programarlo, lo programo.",
+        text: "Scripts en Bash y PowerShell, Git y HTML, CSS y Astro: si hay que programarlo, lo programo.",
       },
     ],
   },

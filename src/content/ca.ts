@@ -104,7 +104,7 @@ export const ca: Content = {
     },
     lead: 'Soc tècnic en sistemes i xarxes. Aquesta web és el meu currículum: què sé fer, què he fet i com em presento.',
     intro:
-      'Em dic José da Silva i soc de Tordera. Vaig començar a l\'informàtica obrint ordinadors vells a casa, i encara no he parat: ara acabo ASIR i em dedico a què la tecnologia funcioni per a qui la fa servir. Soc pràctic, ordenat i amb tracte amb la gent; m\'agrada deixar les coses millor de com les trobo i aprendre\'n cada dia. Aquesta web l\'he feta jo.',
+      'Em dic José da Silva i soc de Tordera. Vaig començar a l\'informàtica obrint ordinadors vells a casa, i encara no he parat: ara acabo ASIR i em dedico a què la tecnologia funcioni per a qui la fa servir. Soc pràctic, ordenat i amb tracte amb la gent; m\'agrada deixar les coses millor de com les trobo i aprendre\'n cada dia.',
     primaryCta: 'Veure el currículum',
     secondaryCta: 'Llegir la carta',
     sectionsTitle: 'Els documents',
@@ -140,7 +140,7 @@ export const ca: Content = {
       },
       {
         title: 'Automatització i web',
-        text: 'Scripts en Bash i PowerShell, Git i aquesta mateixa web feta amb Astro: si cal programar-ho, ho programo.',
+        text: 'Scripts en Bash i PowerShell, Git i HTML, CSS i Astro: si cal programar-ho, ho programo.',
       },
     ],
   },

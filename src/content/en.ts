@@ -104,7 +104,7 @@ export const en: Content = {
     },
     lead: "I am a systems and network technician. This site is my CV: what I can do, what I have done and how I introduce myself.",
     intro:
-      "My name is José da Silva and I am from Tordera. I got into computing taking old computers apart at home, and I have not stopped since: I am now finishing ASIR and I work so technology does what people need it to do. I am practical, organised and good with people; I like leaving things better than I found them and learning every day. I built this website myself.",
+      "My name is José da Silva and I am from Tordera. I got into computing taking old computers apart at home, and I have not stopped since: I am now finishing ASIR and I work so technology does what people need it to do. I am practical, organised and good with people; I like leaving things better than I found them and learning every day.",
     primaryCta: "See the CV",
     secondaryCta: "Read the letter",
     sectionsTitle: "The documents",
@@ -140,7 +140,7 @@ export const en: Content = {
       },
       {
         title: "Automation and web",
-        text: "Bash and PowerShell scripts, Git and this very site built with Astro: if it can be scripted, I script it.",
+        text: "Bash and PowerShell scripts, Git and HTML, CSS and Astro: if it can be scripted, I script it.",
       },
     ],
   },
