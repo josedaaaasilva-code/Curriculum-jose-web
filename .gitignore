@@ -30,3 +30,6 @@ Thumbs.db
 
 # runtime
 *.pid
+
+# capturas de revisió (no es publiquen)
+artifacts/
