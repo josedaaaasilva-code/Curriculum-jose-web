@@ -5,14 +5,14 @@ export const en: Content = {
   meta: {
     title: "José da Silva · Systems and network technician",
     description:
-      "CV of José da Silva, systems and network administration technician. IT support, Linux and Windows servers, networking and automation. Available for an internship or a first job.",
+      "CV of José da Silva, systems and network administration technician. IT support, Linux and Windows servers, networking, automation and web. Available to join a systems, networking or support team.",
   },
   site: {
     name: "José da Silva",
     initials: "JS",
     role: "Systems and network administration technician",
     location: "Tordera (Barcelona)",
-    availability: "Available for an internship or a first job in systems and cloud",
+    availability: "Available to join a team and contribute from day one",
     email: "josedaaaasilva@gmail.com",
     phoneDisplay: "722 827 664",
     phoneHref: "+34722827664",
@@ -36,29 +36,75 @@ export const en: Content = {
     backToTop: "Back to top",
     madeWith: "Built with Astro and published on GitHub Pages",
     updated: "Updated October 2026",
-    statusLabel: "Availability",
+    statusLabel: "Open to",
   },
   hero: {
-    eyebrow: "Systems · Networks · Cloud",
-    subtitle: "Systems and network administration technician, finishing ASIR.",
+    eyebrow: "Systems · Networks · Support · Automation",
+    subtitle: "Systems, networking and support technician, finishing ASIR. Also scripting and web when it helps.",
     intro:
-      "I solve technical problems and write down what I did. I am looking for a team where I can grow in systems and cloud from day one.",
+      "Systems, networking and support technician. I administer Windows and Linux servers, resolve user incidents and automate repetitive work. I am currently finishing the ASIR diploma.",
     primaryCta: "See the CV",
     secondaryCta: "Read the letter",
     facts: [
-      { label: "Currently studying", value: "ASIR advanced diploma · year 2" },
-      { label: "College", value: "IES Sa Palomera (Blanes)" },
-      { label: "Specialism", value: "Systems administration and cloud" },
+      { label: "Roles", value: "Systems · Networks · Support · Automation" },
+      { label: "Working style", value: "On-site, hybrid or remote" },
+      { label: "Location", value: "Tordera (Barcelona)" },
+      { label: "Education", value: "ASIR advanced diploma · year 2 (2025—2027)" },
       { label: "Languages", value: "Catalan and Spanish native · English B1 · Portuguese A2" },
+    ],
+  },
+  tech: {
+    title: "Technical skills",
+    lead: "The tools I work with every day: from the machine to the network, and from the terminal to code.",
+    groups: [
+      {
+        title: "Systems and servers",
+        items: [
+          { icon: "linux", name: "Linux" },
+          { icon: "debian", name: "Debian" },
+          { icon: "ubuntu", name: "Ubuntu" },
+          { icon: "windows", name: "Windows Server" },
+          { icon: "apple", name: "macOS" },
+          { icon: "vmware", name: "VMware" },
+          { icon: "proxmox", name: "Proxmox" },
+          { icon: "nginx", name: "Nginx" },
+        ],
+      },
+      {
+        title: "Networking, data and security",
+        items: [
+          { icon: "cisco", name: "Cisco" },
+          { icon: "wireshark", name: "Wireshark" },
+          { icon: "postgresql", name: "PostgreSQL" },
+          { icon: "mysql", name: "MySQL" },
+          { icon: "sqlite", name: "SQLite" },
+        ],
+      },
+      {
+        title: "Automation and web",
+        items: [
+          { icon: "gnubash", name: "Bash" },
+          { icon: "python", name: "Python" },
+          { icon: "git", name: "Git" },
+          { icon: "github", name: "GitHub" },
+          { icon: "astro", name: "Astro" },
+          { icon: "html5", name: "HTML" },
+          { icon: "css", name: "CSS" },
+          { icon: "javascript", name: "JavaScript" },
+          { icon: "markdown", name: "Markdown" },
+        ],
+      },
     ],
   },
   home: {
     meta: {
       title: "José da Silva · Systems and network technician",
       description:
-        "Personal site of José da Silva: CV and cover letter. Systems and network administration technician, available for an internship or a first job.",
+        "Personal site of José da Silva: CV and cover letter. Systems and network administration technician, available to join a team.",
     },
     lead: "I am a systems and network technician. This site is my CV: what I can do, what I have done and how I introduce myself.",
+    intro:
+      "My name is José da Silva and I am from Tordera. I got into computing taking old computers apart at home, and I have not stopped since: I am now finishing ASIR and I work so technology does what people need it to do. I am practical, organised and good with people; I like leaving things better than I found them and learning every day. I built this website myself.",
     primaryCta: "See the CV",
     secondaryCta: "Read the letter",
     sectionsTitle: "The documents",
@@ -82,15 +128,19 @@ export const en: Content = {
     highlights: [
       {
         title: "Systems and servers",
-        text: "Linux and Windows Server, virtualisation, network services and backups.",
+        text: "Linux and Windows Server, virtualisation, network services, backups and monitoring.",
+      },
+      {
+        title: "Networking and security",
+        text: "Cabling, routers and switches, DNS and DHCP, firewalls and user and permission management.",
       },
       {
         title: "User support",
-        text: "Day-to-day incidents handled clearly, including with non-technical users.",
+        text: "Day-to-day incidents handled clearly, including with non-technical users, and documented so they do not come back.",
       },
       {
-        title: "Automation and documentation",
-        text: "Scripts that remove repetitive work and documentation so the next person can maintain it.",
+        title: "Automation and web",
+        text: "Bash and PowerShell scripts, Git and this very site built with Astro: if it can be scripted, I script it.",
       },
     ],
   },
@@ -100,7 +150,7 @@ export const en: Content = {
     paragraphs: [
       "I am from Tordera and I got into computing the usual way: taking old computers apart at home, breaking things and learning to make them work again. Then came SMX, where I discovered that what I enjoyed could also be a job.",
       "At Tordera Town Council I learned that support is mostly about people: listening, understanding what someone needs and fixing it without making them feel foolish. At Hardysoft I moved on to administering Windows and Linux servers and automating tasks, and confirmed that this is the direction I want to take.",
-      "I see myself as an organised, curious person who adapts easily to new tools. When a problem appears I like to investigate before asking for help; when I solve it, I write it down. I am now finishing ASIR and looking for a place to learn systems and cloud alongside a team.",
+      "I see myself as an organised, curious person who adapts easily to new tools. When a problem appears I like to investigate before asking for help; when I solve it, I write it down. I am now finishing ASIR and want to learn systems and cloud alongside a team.",
     ],
   },
   experience: {
@@ -294,7 +344,7 @@ export const en: Content = {
       "I have experience in IT support, equipment maintenance, software and hardware installation, basic networking and systems administration. At Tordera Town Council I learned to work with non-technical users; at Hardysoft I administered Windows and Linux servers and automated repetitive tasks.",
       "I also have a working knowledge of Python, databases, Git and GitHub, and I have taken my first steps with agile methods such as Scrum. I am familiar with public-sector administrative vocabulary and document management, and I am comfortable with office tools.",
       "I enjoy contact with people: I make other people's problems my own and try to resolve every incident as correctly and quickly as possible. I learn fast, adapt easily and work in a clear, orderly way.",
-      "I am looking for a role where I can contribute from day one, keep growing as a professional and build a relationship of trust with the company. On this site you will find my full CV and my career plan, in case they are useful before we talk.",
+      "I want to contribute from day one, keep growing as a professional and build a relationship of trust with the company. On this site you will find my full CV and my career plan, in case they are useful before we talk.",
     ],
     closing:
       "I am available for an interview or to provide any further information you may need. Thank you for your time.",
@@ -305,7 +355,7 @@ export const en: Content = {
   },
   contact: {
     title: "Let's talk",
-    lead: "I am looking for an internship or a first job in systems administration, IT support or cloud. If you have an opportunity or want to discuss the project, get in touch.",
+    lead: "I work in systems administration, IT support and cloud. If you have an opportunity or want to discuss the project, get in touch.",
     emailLabel: "Email",
     phoneLabel: "Phone",
     phoneReveal: "Show phone number",

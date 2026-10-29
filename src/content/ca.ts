@@ -5,14 +5,14 @@ export const ca: Content = {
   meta: {
     title: 'José da Silva · Tècnic en sistemes i xarxes',
     description:
-      'Currículum de José da Silva, tècnic en administració de sistemes i xarxes. Suport IT, servidors Linux i Windows, xarxes i automatització. Disponible per a pràctiques o una primera feina.',
+      'Currículum de José da Silva, tècnic en administració de sistemes i xarxes. Suport IT, servidors Linux i Windows, xarxes, automatització i web. Disponible per incorporar-me a un equip de sistemes, xarxes o suport.',
   },
   site: {
     name: 'José da Silva',
     initials: 'JS',
     role: 'Tècnic en administració de sistemes i xarxes',
     location: 'Tordera (Barcelona)',
-    availability: 'Disponible per a pràctiques o una primera feina en sistemes i cloud',
+    availability: 'Disponible per incorporar-me a un equip i aportar des del primer dia',
     email: 'josedaaaasilva@gmail.com',
     phoneDisplay: '722 827 664',
     phoneHref: '+34722827664',
@@ -36,29 +36,75 @@ export const ca: Content = {
     backToTop: 'Torna a dalt',
     madeWith: 'Fet amb Astro i publicat a GitHub Pages',
     updated: 'Actualitzat l\'octubre de 2026',
-    statusLabel: 'Disponibilitat',
+    statusLabel: 'Obert a',
   },
   hero: {
-    eyebrow: 'Sistemes · Xarxes · Cloud',
-    subtitle: 'Tècnic en administració de sistemes i xarxes, a punt de tancar ASIR.',
+    eyebrow: 'Sistemes · Xarxes · Suport · Automatització',
+    subtitle: 'Tècnic de sistemes, xarxes i suport, a punt de tancar ASIR. També scripting i web quan cal.',
     intro:
-      'Resolc problemes tècnics i els deixo documentats. Busco un equip on créixer en sistemes i cloud des del primer dia.',
+      'Tècnic de sistemes, xarxes i suport. Administro servidors Windows i Linux, resolc incidències d\'usuaris i automatitzo les tasques que es repeteixen. Actualment acabo el CFGS ASIR.',
     primaryCta: 'Veure el currículum',
     secondaryCta: 'Llegir la carta',
     facts: [
-      { label: 'Formació actual', value: 'CFGS ASIR · 2n curs' },
-      { label: 'Centre', value: 'IES Sa Palomera (Blanes)' },
-      { label: 'Especialitat', value: 'Administració de sistemes i cloud' },
+      { label: 'Rols', value: 'Sistemes · Xarxes · Suport · Automatització' },
+      { label: 'Modalitat', value: 'Presencial, híbrid o remot' },
+      { label: 'Ubicació', value: 'Tordera (Barcelona)' },
+      { label: 'Formació', value: 'CFGS ASIR · 2n curs (2025—2027)' },
       { label: 'Idiomes', value: 'Català i castellà nadius · Anglès B1 · Portuguès A2' },
+    ],
+  },
+  tech: {
+    title: 'Competències tècniques',
+    lead: 'Les eines amb què treballo cada dia: de la màquina a la xarxa, i del terminal al codi.',
+    groups: [
+      {
+        title: 'Sistemes i servidors',
+        items: [
+          { icon: 'linux', name: 'Linux' },
+          { icon: 'debian', name: 'Debian' },
+          { icon: 'ubuntu', name: 'Ubuntu' },
+          { icon: 'windows', name: 'Windows Server' },
+          { icon: 'apple', name: 'macOS' },
+          { icon: 'vmware', name: 'VMware' },
+          { icon: 'proxmox', name: 'Proxmox' },
+          { icon: 'nginx', name: 'Nginx' },
+        ],
+      },
+      {
+        title: 'Xarxes, dades i seguretat',
+        items: [
+          { icon: 'cisco', name: 'Cisco' },
+          { icon: 'wireshark', name: 'Wireshark' },
+          { icon: 'postgresql', name: 'PostgreSQL' },
+          { icon: 'mysql', name: 'MySQL' },
+          { icon: 'sqlite', name: 'SQLite' },
+        ],
+      },
+      {
+        title: 'Automatització i web',
+        items: [
+          { icon: 'gnubash', name: 'Bash' },
+          { icon: 'python', name: 'Python' },
+          { icon: 'git', name: 'Git' },
+          { icon: 'github', name: 'GitHub' },
+          { icon: 'astro', name: 'Astro' },
+          { icon: 'html5', name: 'HTML' },
+          { icon: 'css', name: 'CSS' },
+          { icon: 'javascript', name: 'JavaScript' },
+          { icon: 'markdown', name: 'Markdown' },
+        ],
+      },
     ],
   },
   home: {
     meta: {
       title: 'José da Silva · Tècnic en sistemes i xarxes',
       description:
-        'Web personal de José da Silva: currículum i carta de presentació. Tècnic en administració de sistemes i xarxes, disponible per a pràctiques o una primera feina.',
+        'Web personal de José da Silva: currículum i carta de presentació. Tècnic en administració de sistemes i xarxes, disponible per incorporar-me a un equip.',
     },
     lead: 'Soc tècnic en sistemes i xarxes. Aquesta web és el meu currículum: què sé fer, què he fet i com em presento.',
+    intro:
+      'Em dic José da Silva i soc de Tordera. Vaig començar a l\'informàtica obrint ordinadors vells a casa, i encara no he parat: ara acabo ASIR i em dedico a què la tecnologia funcioni per a qui la fa servir. Soc pràctic, ordenat i amb tracte amb la gent; m\'agrada deixar les coses millor de com les trobo i aprendre\'n cada dia. Aquesta web l\'he feta jo.',
     primaryCta: 'Veure el currículum',
     secondaryCta: 'Llegir la carta',
     sectionsTitle: 'Els documents',
@@ -82,15 +128,19 @@ export const ca: Content = {
     highlights: [
       {
         title: 'Sistemes i servidors',
-        text: 'Linux i Windows Server, virtualització, serveis de xarxa i còpies de seguretat.',
+        text: 'Linux i Windows Server, virtualització, serveis de xarxa, còpies de seguretat i monitoratge.',
+      },
+      {
+        title: 'Xarxes i seguretat',
+        text: 'Cablejat, routers i switches, DNS i DHCP, tallafocs i gestió d\'usuaris i permisos.',
       },
       {
         title: 'Suport a usuaris',
-        text: 'Incidències del dia a dia amb tracte clar, també amb qui no és tècnic.',
+        text: 'Incidències del dia a dia amb tracte clar, també amb qui no és tècnic, i documentades perquè no es repeteixin.',
       },
       {
-        title: 'Automatització i documentació',
-        text: 'Scripts per estalviar feina repetida i documentació perquè el següent ho pugui mantenir.',
+        title: 'Automatització i web',
+        text: 'Scripts en Bash i PowerShell, Git i aquesta mateixa web feta amb Astro: si cal programar-ho, ho programo.',
       },
     ],
   },
@@ -100,7 +150,7 @@ export const ca: Content = {
     paragraphs: [
       'Soc de Tordera i vaig començar a l\'informàtica pel camí habitual: obrint ordinadors vells a casa, espatllant coses i aprenent a tornar-les a fer funcionar. Després va arribar SMX, on vaig descobrir que allò que m\'agradava també podia ser una feina.',
       'A l\'Ajuntament de Tordera vaig aprendre que el suport és sobretot tracte: escoltar, entendre què necessita la persona i resoldre-ho sense fer-la sentir malament. A Hardysoft vaig passar a administrar servidors Windows i Linux i a automatitzar tasques, i vaig confirmar que vull aprofundir per aquesta banda.',
-      'Em considero una persona ordenada, curiosa i amb facilitat per adaptar-me a eines noves. Quan apareix un problema, m\'agrada investigar abans de demanar ajuda; quan el resolc, ho deixo escrit. Ara estic acabant ASIR i busco un lloc on aprendre sistemes i cloud al costat d\'un equip.',
+      'Em considero una persona ordenada, curiosa i amb facilitat per adaptar-me a eines noves. Quan apareix un problema, m\'agrada investigar abans de demanar ajuda; quan el resolc, ho deixo escrit. Ara estic acabant ASIR i vull aprendre sistemes i cloud al costat d\'un equip.',
     ],
   },
   experience: {
@@ -294,7 +344,7 @@ export const ca: Content = {
       'Tinc experiència en tasques de suport informàtic, manteniment d\'equips, instal·lació de programari i maquinari, xarxes bàsiques i administració de sistemes. A l\'Ajuntament de Tordera vaig aprendre a tractar amb usuaris que no són tècnics; a Hardysoft vaig administrar servidors Windows i Linux i vaig automatitzar tasques repetitives.',
       'També tinc coneixements de Python, bases de dades i Git i GitHub, i he fet les primeres passes amb mètodes àgils com Scrum. Estic familiaritzat amb el vocabulari administratiu públic i amb la gestió de documentació, i treballo amb eines d\'oficina amb soltesa.',
       'M\'agrada tenir contacte amb la gent: faig meves les dificultats dels altres i intento resoldre cada incidència de la manera més correcta i ràpida possible. Aprenc de pressa, m\'adapto fàcilment i treballo de manera clara i ordenada.',
-      'Busco un lloc on pugui col·laborar des del primer dia, seguir millorant com a professional i construir una relació de confiança amb l\'empresa. En aquesta web hi trobareu el currículum complet i la meva projecció professional, per si us és útil abans de parlar.',
+      'Vull col·laborar des del primer dia, seguir millorant com a professional i construir una relació de confiança amb l\'empresa. En aquesta web hi trobareu el currículum complet i la meva projecció professional, per si us és útil abans de parlar.',
     ],
     closing:
       'Estic a la vostra disposició per a una entrevista o per donar-vos qualsevol informació que necessiteu. Gràcies pel vostre temps.',
@@ -305,7 +355,7 @@ export const ca: Content = {
   },
   contact: {
     title: 'Parlem-ne',
-    lead: 'Busco pràctiques o una primera feina en administració de sistemes, suport tècnic o cloud. Si tens una oportunitat o vols comentar el projecte, escriu-me.',
+    lead: 'Treballe en administració de sistemes, suport tècnic i cloud. Si tens una oportunitat o vols comentar el projecte, escriu-me.',
     emailLabel: 'Correu',
     phoneLabel: 'Telèfon',
     phoneReveal: 'Mostra el telèfon',

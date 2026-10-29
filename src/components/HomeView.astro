@@ -2,6 +2,7 @@
 import type { Content } from '../content/types';
 import Section from './Section.astro';
 import ContactGrid from './ContactGrid.astro';
+import TechGrid from './TechGrid.astro';
 import { pathFor } from '../lib/paths';
 
 interface Props {
@@ -18,7 +19,7 @@ const lang = c.lang;
       <p class="eyebrow">{c.hero.eyebrow}</p>
       <h1 class="hero__title">{c.site.name}</h1>
       <p class="hero__subtitle">{c.hero.subtitle}</p>
-      <p class="hero__intro">{c.hero.intro}</p>
+      <p class="hero__intro">{c.home.intro}</p>
 
       <div class="hero__actions">
         <a class="btn btn--primary" href={pathFor(lang, 'cv')}>{c.home.primaryCta}</a>
@@ -62,7 +63,11 @@ const lang = c.lang;
   </div>
 </Section>
 
-<Section id="documents" number="02" title={c.home.sectionsTitle}>
+<Section id="tecniques" number="02" title={c.tech.title} lead={c.tech.lead}>
+  <TechGrid tech={c.tech} />
+</Section>
+
+<Section id="documents" number="03" title={c.home.sectionsTitle}>
   <div class="cards">
     {
       c.home.cards.map((card, index) => (
@@ -77,6 +82,6 @@ const lang = c.lang;
   </div>
 </Section>
 
-<Section id="contacte" number="03" title={c.contact.title}>
+<Section id="contacte" number="04" title={c.contact.title}>
   <ContactGrid c={c} />
 </Section>

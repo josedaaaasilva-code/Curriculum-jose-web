@@ -1,0 +1,32 @@
+---
+import type { TechSection } from '../content/types';
+import { BASE } from '../lib/paths';
+
+interface Props {
+  tech: TechSection;
+}
+
+const { tech } = Astro.props;
+---
+
+<div class="tech">
+  {
+    tech.groups.map((group, groupIndex) => (
+      <section class="tech__group" data-reveal style={`--i:${groupIndex}`}>
+        <h3 class="tech__group-title">{group.title}</h3>
+        <ul class="tech__items">
+          {group.items.map((item) => (
+            <li class="tech__item">
+              <span
+                class="tech__icon"
+                style={`--icon:url('${BASE}icons/${item.icon}.svg')`}
+                aria-hidden="true"
+              />
+              <span class="tech__name">{item.name}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</div>

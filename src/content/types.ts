@@ -53,6 +53,22 @@ export interface Hero {
   facts: Fact[];
 }
 
+export interface TechItem {
+  icon: string;
+  name: string;
+}
+
+export interface TechGroup {
+  title: string;
+  items: TechItem[];
+}
+
+export interface TechSection {
+  title: string;
+  lead: string;
+  groups: TechGroup[];
+}
+
 export interface HomeCard {
   key: 'cv' | 'letter';
   number: string;
@@ -69,6 +85,7 @@ export interface Highlight {
 export interface Home {
   meta: Meta;
   lead: string;
+  intro: string;
   primaryCta: string;
   secondaryCta: string;
   sectionsTitle: string;
@@ -185,6 +202,7 @@ export interface Content {
   nav: Nav;
   ui: Ui;
   hero: Hero;
+  tech: TechSection;
   home: Home;
   profile: Profile;
   experience: ExperienceSection;

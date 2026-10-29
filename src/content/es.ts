@@ -5,14 +5,14 @@ export const es: Content = {
   meta: {
     title: "José da Silva · Técnico en sistemas y redes",
     description:
-      "Currículum de José da Silva, técnico en administración de sistemas y redes. Soporte IT, servidores Linux y Windows, redes y automatización. Disponible para prácticas o un primer empleo.",
+      "Currículum de José da Silva, técnico en administración de sistemas y redes. Soporte IT, servidores Linux y Windows, redes, automatización y web. Disponible para incorporarme a un equipo de sistemas, redes o soporte.",
   },
   site: {
     name: "José da Silva",
     initials: "JS",
     role: "Técnico en administración de sistemas y redes",
     location: "Tordera (Barcelona)",
-    availability: "Disponible para prácticas o un primer empleo en sistemas y cloud",
+    availability: "Disponible para incorporarme a un equipo y aportar desde el primer día",
     email: "josedaaaasilva@gmail.com",
     phoneDisplay: "722 827 664",
     phoneHref: "+34722827664",
@@ -36,29 +36,75 @@ export const es: Content = {
     backToTop: "Volver arriba",
     madeWith: "Hecho con Astro y publicado en GitHub Pages",
     updated: "Actualizado en octubre de 2026",
-    statusLabel: "Disponibilidad",
+    statusLabel: "Abierto a",
   },
   hero: {
-    eyebrow: "Sistemas · Redes · Cloud",
-    subtitle: "Técnico en administración de sistemas y redes, a punto de terminar ASIR.",
+    eyebrow: "Sistemas · Redes · Soporte · Automatización",
+    subtitle: "Técnico de sistemas, redes y soporte, a punto de terminar ASIR. También scripting y web cuando hace falta.",
     intro:
-      "Resuelvo problemas técnicos y los dejo documentados. Busco un equipo donde crecer en sistemas y cloud desde el primer día.",
+      "Técnico de sistemas, redes y soporte. Administro servidores Windows y Linux, resuelvo incidencias de usuarios y automatizo las tareas que se repiten. Actualmente termino el CFGS ASIR.",
     primaryCta: "Ver el currículum",
     secondaryCta: "Leer la carta",
     facts: [
-      { label: "Formación actual", value: "CFGS ASIR · 2.º curso" },
-      { label: "Centro", value: "IES Sa Palomera (Blanes)" },
-      { label: "Especialidad", value: "Administración de sistemas y cloud" },
+      { label: "Roles", value: "Sistemas · Redes · Soporte · Automatización" },
+      { label: "Modalidad", value: "Presencial, híbrido o remoto" },
+      { label: "Ubicación", value: "Tordera (Barcelona)" },
+      { label: "Formación", value: "CFGS ASIR · 2.º curso (2025—2027)" },
       { label: "Idiomas", value: "Catalán y castellano nativos · Inglés B1 · Portugués A2" },
+    ],
+  },
+  tech: {
+    title: "Competencias técnicas",
+    lead: "Las herramientas con las que trabajo cada día: de la máquina a la red, y del terminal al código.",
+    groups: [
+      {
+        title: "Sistemas y servidores",
+        items: [
+          { icon: "linux", name: "Linux" },
+          { icon: "debian", name: "Debian" },
+          { icon: "ubuntu", name: "Ubuntu" },
+          { icon: "windows", name: "Windows Server" },
+          { icon: "apple", name: "macOS" },
+          { icon: "vmware", name: "VMware" },
+          { icon: "proxmox", name: "Proxmox" },
+          { icon: "nginx", name: "Nginx" },
+        ],
+      },
+      {
+        title: "Redes, datos y seguridad",
+        items: [
+          { icon: "cisco", name: "Cisco" },
+          { icon: "wireshark", name: "Wireshark" },
+          { icon: "postgresql", name: "PostgreSQL" },
+          { icon: "mysql", name: "MySQL" },
+          { icon: "sqlite", name: "SQLite" },
+        ],
+      },
+      {
+        title: "Automatización y web",
+        items: [
+          { icon: "gnubash", name: "Bash" },
+          { icon: "python", name: "Python" },
+          { icon: "git", name: "Git" },
+          { icon: "github", name: "GitHub" },
+          { icon: "astro", name: "Astro" },
+          { icon: "html5", name: "HTML" },
+          { icon: "css", name: "CSS" },
+          { icon: "javascript", name: "JavaScript" },
+          { icon: "markdown", name: "Markdown" },
+        ],
+      },
     ],
   },
   home: {
     meta: {
       title: "José da Silva · Técnico en sistemas y redes",
       description:
-        "Web personal de José da Silva: currículum y carta de presentación. Técnico en administración de sistemas y redes, disponible para prácticas o un primer empleo.",
+        "Web personal de José da Silva: currículum y carta de presentación. Técnico en administración de sistemas y redes, disponible para incorporarme a un equipo.",
     },
     lead: "Soy técnico en sistemas y redes. Esta web es mi currículum: qué sé hacer, qué he hecho y cómo me presento.",
+    intro:
+      "Me llamo José da Silva y soy de Tordera. Empecé en la informática abriendo ordenadores viejos en casa, y todavía no he parado: ahora estoy terminando ASIR y me dedico a que la tecnología funcione para quien la usa. Soy práctico, ordenado y con trato con la gente; me gusta dejar las cosas mejor de como las encuentro y aprender cada día. Esta misma web la he hecho yo.",
     primaryCta: "Ver el currículum",
     secondaryCta: "Leer la carta",
     sectionsTitle: "Los documentos",
@@ -82,15 +128,19 @@ export const es: Content = {
     highlights: [
       {
         title: "Sistemas y servidores",
-        text: "Linux y Windows Server, virtualización, servicios de red y copias de seguridad.",
+        text: "Linux y Windows Server, virtualización, servicios de red, copias de seguridad y monitorización.",
+      },
+      {
+        title: "Redes y seguridad",
+        text: "Cableado, routers y switches, DNS y DHCP, cortafuegos y gestión de usuarios y permisos.",
       },
       {
         title: "Soporte a usuarios",
-        text: "Incidencias del día a día con un trato claro, también con quien no es técnico.",
+        text: "Incidencias del día a día con un trato claro, también con quien no es técnico, y documentadas para que no se repitan.",
       },
       {
-        title: "Automatización y documentación",
-        text: "Scripts para ahorrar trabajo repetido y documentación para que el siguiente pueda mantenerlo.",
+        title: "Automatización y web",
+        text: "Scripts en Bash y PowerShell, Git y esta misma web hecha con Astro: si hay que programarlo, lo programo.",
       },
     ],
   },
@@ -100,7 +150,7 @@ export const es: Content = {
     paragraphs: [
       "Soy de Tordera y empecé en la informática por el camino habitual: abriendo ordenadores viejos en casa, rompiendo cosas y aprendiendo a volver a hacerlas funcionar. Después llegó SMX, donde descubrí que lo que me gustaba también podía ser un trabajo.",
       "En el Ayuntamiento de Tordera aprendí que el soporte es sobre todo trato: escuchar, entender qué necesita la persona y resolverlo sin hacerla sentir mal. En Hardysoft pasé a administrar servidores Windows y Linux y a automatizar tareas, y confirmé que quiero profundizar por ese lado.",
-      "Me considero una persona ordenada, curiosa y con facilidad para adaptarme a herramientas nuevas. Cuando aparece un problema, me gusta investigar antes de pedir ayuda; cuando lo resuelvo, lo dejo por escrito. Ahora estoy terminando ASIR y busco un puesto donde aprender sistemas y cloud junto a un equipo.",
+      "Me considero una persona ordenada, curiosa y con facilidad para adaptarme a herramientas nuevas. Cuando aparece un problema, me gusta investigar antes de pedir ayuda; cuando lo resuelvo, lo dejo por escrito. Ahora estoy terminando ASIR y quiero aprender sistemas y cloud junto a un equipo.",
     ],
   },
   experience: {
@@ -294,7 +344,7 @@ export const es: Content = {
       "Tengo experiencia en tareas de soporte informático, mantenimiento de equipos, instalación de software y hardware, redes básicas y administración de sistemas. En el Ayuntamiento de Tordera aprendí a tratar con usuarios que no son técnicos; en Hardysoft administré servidores Windows y Linux y automaticé tareas repetitivas.",
       "También tengo conocimientos de Python, bases de datos y Git y GitHub, y he dado mis primeros pasos con métodos ágiles como Scrum. Estoy familiarizado con el vocabulario administrativo público y con la gestión de documentación, y trabajo con herramientas de oficina con soltura.",
       "Me gusta el contacto con la gente: hago míos los problemas de los demás e intento resolver cada incidencia de la manera más correcta y rápida posible. Aprendo rápido, me adapto con facilidad y trabajo de forma clara y ordenada.",
-      "Busco un puesto en el que pueda colaborar desde el primer día, seguir mejorando como profesional y construir una relación de confianza con la empresa. En esta web encontraréis el currículum completo y mi proyección profesional, por si os resulta útil antes de hablar.",
+      "Quiero colaborar desde el primer día, seguir mejorando como profesional y construir una relación de confianza con la empresa. En esta web encontraréis el currículum completo y mi proyección profesional, por si os resulta útil antes de hablar.",
     ],
     closing:
       "Quedo a vuestra disposición para una entrevista o para daros cualquier información que necesitéis. Gracias por vuestro tiempo.",
@@ -305,7 +355,7 @@ export const es: Content = {
   },
   contact: {
     title: "Hablemos",
-    lead: "Busco prácticas o un primer empleo en administración de sistemas, soporte técnico o cloud. Si tienes una oportunidad o quieres comentar el proyecto, escríbeme.",
+    lead: "Trabajo en administración de sistemas, soporte técnico y cloud. Si tienes una oportunidad o quieres comentar el proyecto, escríbeme.",
     emailLabel: "Correo",
     phoneLabel: "Teléfono",
     phoneReveal: "Mostrar el teléfono",
