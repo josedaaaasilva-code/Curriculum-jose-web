@@ -303,6 +303,8 @@ export const es: Content = {
           "Etiquetado y catalogación de activos para facilitar su mantenimiento.",
         ],
         tags: ["Alta disponibilidad", "SQL", "Automatización", "Documentación"],
+        link: "https://github.com/josedaaaasilva-code/Projecta-Intermodular-ASIX-Hospital",
+        linkLabel: "Ver el repositorio",
       },
       {
         title: "Infraestructura IT de principio a fin",

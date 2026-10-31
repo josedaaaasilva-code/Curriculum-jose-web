@@ -150,6 +150,8 @@ export interface Project {
   summary: string;
   bullets: string[];
   tags: string[];
+  link?: string;
+  linkLabel?: string;
 }
 
 export interface ProjectsSection {

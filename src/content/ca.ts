@@ -303,6 +303,8 @@ export const ca: Content = {
           'Marcatge i catalogació d\'actius per facilitar-ne el manteniment.',
         ],
         tags: ['Alta disponibilitat', 'SQL', 'Automatització', 'Documentació'],
+        link: 'https://github.com/josedaaaasilva-code/Projecta-Intermodular-ASIX-Hospital',
+        linkLabel: 'Veure el repositori',
       },
       {
         title: 'Infraestructura IT de cap a peus',

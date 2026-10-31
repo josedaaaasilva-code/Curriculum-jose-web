@@ -1111,6 +1111,27 @@ ol {
   margin-top: auto;
 }
 
+.project__link {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.95rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--brand);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, gap 0.2s ease;
+}
+
+.project__link:hover {
+  border-color: currentColor;
+  gap: 0.55rem;
+}
+
 /* Idiomes --------------------------------------------------------------- */
 
 .langs {

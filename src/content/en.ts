@@ -303,6 +303,8 @@ export const en: Content = {
           "Tagged and catalogued assets to make maintenance easier.",
         ],
         tags: ["High availability", "SQL", "Automation", "Documentation"],
+        link: "https://github.com/josedaaaasilva-code/Projecta-Intermodular-ASIX-Hospital",
+        linkLabel: "View the repository",
       },
       {
         title: "End-to-end IT infrastructure",

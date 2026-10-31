@@ -154,6 +154,19 @@ const lang = c.lang;
           <ul class="tags">
             {project.tags.map((tag) => <li class="tag">{tag}</li>)}
           </ul>
+          {
+            project.link && (
+              <a
+                class="project__link"
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.linkLabel ?? project.title}
+                <span aria-hidden="true">↗</span>
+              </a>
+            )
+          }
         </article>
       ))
     }
