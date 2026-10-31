@@ -1,4 +1,5 @@
 # Web personal · José da Silva
+Visualitzar Web currículum  'https://josedaaaasilva-code.github.io/Curriculum-jose-web/'
 
 Web de presentació professional amb **currículum** i **carta de presentació**, en **català, castellà i anglès**. Cada document té la seva pàgina, amb mode clar i fosc, i es publica a **GitHub Pages**.
 
