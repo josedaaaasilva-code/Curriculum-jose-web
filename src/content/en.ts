@@ -34,7 +34,7 @@ export const en: Content = {
     print: "Download CV (PDF)",
     printHint: "Your print dialog opens: choose “Save as PDF”.",
     backToTop: "Back to top",
-    madeWith: "Built with Astro and published on GitHub Pages",
+    madeWith: "Published on GitHub Pages",
     updated: "Updated October 2026",
     statusLabel: "Open to",
   },
@@ -65,8 +65,6 @@ export const en: Content = {
           { icon: "ubuntu", name: "Ubuntu" },
           { icon: "windows", name: "Windows Server" },
           { icon: "apple", name: "macOS" },
-          { icon: "vmware", name: "VMware" },
-          { icon: "proxmox", name: "Proxmox" },
           { icon: "nginx", name: "Nginx" },
         ],
       },
@@ -85,9 +83,7 @@ export const en: Content = {
         items: [
           { icon: "gnubash", name: "Bash" },
           { icon: "python", name: "Python" },
-          { icon: "git", name: "Git" },
           { icon: "github", name: "GitHub" },
-          { icon: "astro", name: "Astro" },
           { icon: "html5", name: "HTML" },
           { icon: "css", name: "CSS" },
           { icon: "javascript", name: "JavaScript" },
@@ -140,7 +136,7 @@ export const en: Content = {
       },
       {
         title: "Automation and web",
-        text: "Bash and PowerShell scripts, Git and HTML, CSS and Astro: if it can be scripted, I script it.",
+        text: "Bash and PowerShell scripts, HTML, CSS and JavaScript: if it can be scripted, I script it.",
       },
     ],
   },
@@ -150,7 +146,7 @@ export const en: Content = {
     paragraphs: [
       "I am from Tordera and I got into computing the usual way: taking old computers apart at home, breaking things and learning to make them work again. Then came SMX, where I discovered that what I enjoyed could also be a job.",
       "At Tordera Town Council I learned that support is mostly about people: listening, understanding what someone needs and fixing it without making them feel foolish. At Hardysoft I moved on to administering Windows and Linux servers and automating tasks, and confirmed that this is the direction I want to take.",
-      "I see myself as an organised, curious person who adapts easily to new tools. When a problem appears I like to investigate before asking for help; when I solve it, I write it down. I am now finishing ASIR and want to learn systems and cloud alongside a team.",
+      "I see myself as an organised, curious person who adapts easily to new tools. When a problem appears I like to investigate before asking for help; when I solve it, I write it down. I am now finishing ASIR and want to keep growing in systems and networking alongside a team.",
     ],
   },
   experience: {
@@ -268,7 +264,7 @@ export const en: Content = {
         title: "Automation and tools",
         items: [
           "Scripting (Bash, PowerShell)",
-          "Git and GitHub",
+          "GitHub",
           "Microsoft 365 and Office",
           "Inventory and remote support",
           "Technical documentation",
@@ -344,7 +340,7 @@ export const en: Content = {
     paragraphs: [
       "I am currently in the final year of the advanced diploma in Networked Computer Systems Administration (ASIR). I see myself as a practical, reliable person, keen to contribute and to keep expanding what I know. I like solving technical problems and leaving things working better than I found them.",
       "I have experience in IT support, equipment maintenance, software and hardware installation, basic networking and systems administration. At Tordera Town Council I learned to work with non-technical users; at Hardysoft I administered Windows and Linux servers and automated repetitive tasks.",
-      "I also have a working knowledge of Python, databases, Git and GitHub, and I have taken my first steps with agile methods such as Scrum. I am familiar with public-sector administrative vocabulary and document management, and I am comfortable with office tools.",
+      "I also have a working knowledge of Python, databases and GitHub, and I have taken my first steps with agile methods such as Scrum. I am familiar with public-sector administrative vocabulary and document management, and I am comfortable with office tools.",
       "I enjoy contact with people: I make other people's problems my own and try to resolve every incident as correctly and quickly as possible. I learn fast, adapt easily and work in a clear, orderly way.",
       "I want to contribute from day one, keep growing as a professional and build a relationship of trust with the company. On this site you will find my full CV and my career plan, in case they are useful before we talk.",
     ],
@@ -357,7 +353,7 @@ export const en: Content = {
   },
   contact: {
     title: "Let's talk",
-    lead: "I work in systems administration, IT support and cloud. If you have an opportunity or want to discuss the project, get in touch.",
+    lead: "I work in systems administration, networking and IT support. If you have an opportunity or want to discuss the project, get in touch.",
     emailLabel: "Email",
     phoneLabel: "Phone",
     phoneReveal: "Show phone number",

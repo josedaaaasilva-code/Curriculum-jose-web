@@ -34,7 +34,7 @@ export const es: Content = {
     print: "Descargar el CV (PDF)",
     printHint: "Se abre el diálogo de impresión: elige «Guardar como PDF».",
     backToTop: "Volver arriba",
-    madeWith: "Hecho con Astro y publicado en GitHub Pages",
+    madeWith: "Publicado en GitHub Pages",
     updated: "Actualizado en octubre de 2026",
     statusLabel: "Abierto a",
   },
@@ -65,8 +65,6 @@ export const es: Content = {
           { icon: "ubuntu", name: "Ubuntu" },
           { icon: "windows", name: "Windows Server" },
           { icon: "apple", name: "macOS" },
-          { icon: "vmware", name: "VMware" },
-          { icon: "proxmox", name: "Proxmox" },
           { icon: "nginx", name: "Nginx" },
         ],
       },
@@ -85,9 +83,7 @@ export const es: Content = {
         items: [
           { icon: "gnubash", name: "Bash" },
           { icon: "python", name: "Python" },
-          { icon: "git", name: "Git" },
           { icon: "github", name: "GitHub" },
-          { icon: "astro", name: "Astro" },
           { icon: "html5", name: "HTML" },
           { icon: "css", name: "CSS" },
           { icon: "javascript", name: "JavaScript" },
@@ -140,7 +136,7 @@ export const es: Content = {
       },
       {
         title: "Automatización y web",
-        text: "Scripts en Bash y PowerShell, Git y HTML, CSS y Astro: si hay que programarlo, lo programo.",
+        text: "Scripts en Bash y PowerShell, HTML, CSS y JavaScript: si hay que programarlo, lo programo.",
       },
     ],
   },
@@ -150,7 +146,7 @@ export const es: Content = {
     paragraphs: [
       "Soy de Tordera y empecé en la informática por el camino habitual: abriendo ordenadores viejos en casa, rompiendo cosas y aprendiendo a volver a hacerlas funcionar. Después llegó SMX, donde descubrí que lo que me gustaba también podía ser un trabajo.",
       "En el Ayuntamiento de Tordera aprendí que el soporte es sobre todo trato: escuchar, entender qué necesita la persona y resolverlo sin hacerla sentir mal. En Hardysoft pasé a administrar servidores Windows y Linux y a automatizar tareas, y confirmé que quiero profundizar por ese lado.",
-      "Me considero una persona ordenada, curiosa y con facilidad para adaptarme a herramientas nuevas. Cuando aparece un problema, me gusta investigar antes de pedir ayuda; cuando lo resuelvo, lo dejo por escrito. Ahora estoy terminando ASIR y quiero aprender sistemas y cloud junto a un equipo.",
+      "Me considero una persona ordenada, curiosa y con facilidad para adaptarme a herramientas nuevas. Cuando aparece un problema, me gusta investigar antes de pedir ayuda; cuando lo resuelvo, lo dejo por escrito. Ahora estoy terminando ASIR y quiero seguir creciendo en sistemas y redes junto a un equipo.",
     ],
   },
   experience: {
@@ -268,7 +264,7 @@ export const es: Content = {
         title: "Automatización y herramientas",
         items: [
           "Scripting (Bash, PowerShell)",
-          "Git y GitHub",
+          "GitHub",
           "Microsoft 365 y Office",
           "Inventario y soporte remoto",
           "Documentación técnica",
@@ -344,7 +340,7 @@ export const es: Content = {
     paragraphs: [
       "Actualmente estoy cursando el ciclo formativo de grado superior de Administración de Sistemas Informáticos en Red (ASIR). Me considero una persona práctica y responsable, con ganas de aportar y de ampliar lo que sé. Me gusta resolver problemas técnicos y dejar las cosas funcionando mejor que como las encontré.",
       "Tengo experiencia en tareas de soporte informático, mantenimiento de equipos, instalación de software y hardware, redes básicas y administración de sistemas. En el Ayuntamiento de Tordera aprendí a tratar con usuarios que no son técnicos; en Hardysoft administré servidores Windows y Linux y automaticé tareas repetitivas.",
-      "También tengo conocimientos de Python, bases de datos y Git y GitHub, y he dado mis primeros pasos con métodos ágiles como Scrum. Estoy familiarizado con el vocabulario administrativo público y con la gestión de documentación, y trabajo con herramientas de oficina con soltura.",
+      "También tengo conocimientos de Python, bases de datos y GitHub, y he dado mis primeros pasos con métodos ágiles como Scrum. Estoy familiarizado con el vocabulario administrativo público y con la gestión de documentación, y trabajo con herramientas de oficina con soltura.",
       "Me gusta el contacto con la gente: hago míos los problemas de los demás e intento resolver cada incidencia de la manera más correcta y rápida posible. Aprendo rápido, me adapto con facilidad y trabajo de forma clara y ordenada.",
       "Quiero colaborar desde el primer día, seguir mejorando como profesional y construir una relación de confianza con la empresa. En esta web encontraréis el currículum completo y mi proyección profesional, por si os resulta útil antes de hablar.",
     ],
@@ -357,7 +353,7 @@ export const es: Content = {
   },
   contact: {
     title: "Hablemos",
-    lead: "Trabajo en administración de sistemas, soporte técnico y cloud. Si tienes una oportunidad o quieres comentar el proyecto, escríbeme.",
+    lead: "Trabajo en administración de sistemas, redes y soporte técnico. Si tienes una oportunidad o quieres comentar el proyecto, escríbeme.",
     emailLabel: "Correo",
     phoneLabel: "Teléfono",
     phoneReveal: "Mostrar el teléfono",

@@ -34,7 +34,7 @@ export const ca: Content = {
     print: 'Descarrega el CV (PDF)',
     printHint: 'S\'obre el diàleg d\'impressió: tria «Desa com a PDF».',
     backToTop: 'Torna a dalt',
-    madeWith: 'Fet amb Astro i publicat a GitHub Pages',
+    madeWith: 'Publicat a GitHub Pages',
     updated: 'Actualitzat l\'octubre de 2026',
     statusLabel: 'Obert a',
   },
@@ -65,8 +65,6 @@ export const ca: Content = {
           { icon: 'ubuntu', name: 'Ubuntu' },
           { icon: 'windows', name: 'Windows Server' },
           { icon: 'apple', name: 'macOS' },
-          { icon: 'vmware', name: 'VMware' },
-          { icon: 'proxmox', name: 'Proxmox' },
           { icon: 'nginx', name: 'Nginx' },
         ],
       },
@@ -85,9 +83,7 @@ export const ca: Content = {
         items: [
           { icon: 'gnubash', name: 'Bash' },
           { icon: 'python', name: 'Python' },
-          { icon: 'git', name: 'Git' },
           { icon: 'github', name: 'GitHub' },
-          { icon: 'astro', name: 'Astro' },
           { icon: 'html5', name: 'HTML' },
           { icon: 'css', name: 'CSS' },
           { icon: 'javascript', name: 'JavaScript' },
@@ -140,7 +136,7 @@ export const ca: Content = {
       },
       {
         title: 'Automatització i web',
-        text: 'Scripts en Bash i PowerShell, Git i HTML, CSS i Astro: si cal programar-ho, ho programo.',
+        text: 'Scripts en Bash i PowerShell, i HTML, CSS i JavaScript: si cal programar-ho, ho programo.',
       },
     ],
   },
@@ -150,7 +146,7 @@ export const ca: Content = {
     paragraphs: [
       'Soc de Tordera i vaig començar a l\'informàtica pel camí habitual: obrint ordinadors vells a casa, espatllant coses i aprenent a tornar-les a fer funcionar. Després va arribar SMX, on vaig descobrir que allò que m\'agradava també podia ser una feina.',
       'A l\'Ajuntament de Tordera vaig aprendre que el suport és sobretot tracte: escoltar, entendre què necessita la persona i resoldre-ho sense fer-la sentir malament. A Hardysoft vaig passar a administrar servidors Windows i Linux i a automatitzar tasques, i vaig confirmar que vull aprofundir per aquesta banda.',
-      'Em considero una persona ordenada, curiosa i amb facilitat per adaptar-me a eines noves. Quan apareix un problema, m\'agrada investigar abans de demanar ajuda; quan el resolc, ho deixo escrit. Ara estic acabant ASIR i vull aprendre sistemes i cloud al costat d\'un equip.',
+      'Em considero una persona ordenada, curiosa i amb facilitat per adaptar-me a eines noves. Quan apareix un problema, m\'agrada investigar abans de demanar ajuda; quan el resolc, ho deixo escrit. Ara estic acabant ASIR i vull seguir creixent en sistemes i xarxes al costat d\'un equip.',
     ],
   },
   experience: {
@@ -268,7 +264,7 @@ export const ca: Content = {
         title: 'Automatització i eines',
         items: [
           'Scripting (Bash, PowerShell)',
-          'Git i GitHub',
+          'GitHub',
           'Microsoft 365 i Office',
           'Inventari i suport remot',
           'Documentació tècnica',
@@ -344,7 +340,7 @@ export const ca: Content = {
     paragraphs: [
       'Actualment estic cursant el cicle formatiu de grau superior d\'Administració de Sistemes Informàtics en Xarxa (ASIR). Em considero una persona pràctica i responsable, amb ganes d\'aportar i d\'ampliar el que sé. M\'agrada resoldre problemes tècnics i deixar les coses funcionant millor que com les vaig trobar.',
       'Tinc experiència en tasques de suport informàtic, manteniment d\'equips, instal·lació de programari i maquinari, xarxes bàsiques i administració de sistemes. A l\'Ajuntament de Tordera vaig aprendre a tractar amb usuaris que no són tècnics; a Hardysoft vaig administrar servidors Windows i Linux i vaig automatitzar tasques repetitives.',
-      'També tinc coneixements de Python, bases de dades i Git i GitHub, i he fet les primeres passes amb mètodes àgils com Scrum. Estic familiaritzat amb el vocabulari administratiu públic i amb la gestió de documentació, i treballo amb eines d\'oficina amb soltesa.',
+      'També tinc coneixements de Python, bases de dades i GitHub, i he fet les primeres passes amb mètodes àgils com Scrum. Estic familiaritzat amb el vocabulari administratiu públic i amb la gestió de documentació, i treballo amb eines d\'oficina amb soltesa.',
       'M\'agrada tenir contacte amb la gent: faig meves les dificultats dels altres i intento resoldre cada incidència de la manera més correcta i ràpida possible. Aprenc de pressa, m\'adapto fàcilment i treballo de manera clara i ordenada.',
       'Vull col·laborar des del primer dia, seguir millorant com a professional i construir una relació de confiança amb l\'empresa. En aquesta web hi trobareu el currículum complet i la meva projecció professional, per si us és útil abans de parlar.',
     ],
@@ -357,7 +353,7 @@ export const ca: Content = {
   },
   contact: {
     title: 'Parlem-ne',
-    lead: 'Treballe en administració de sistemes, suport tècnic i cloud. Si tens una oportunitat o vols comentar el projecte, escriu-me.',
+    lead: 'Treballe en administració de sistemes, xarxes i suport tècnic. Si tens una oportunitat o vols comentar el projecte, escriu-me.',
     emailLabel: 'Correu',
     phoneLabel: 'Telèfon',
     phoneReveal: 'Mostra el telèfon',
