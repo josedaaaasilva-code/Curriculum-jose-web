@@ -16,6 +16,18 @@ export function pathFor(lang: Lang, page: PageKey = 'home'): string {
   return `${BASE}${prefix}${slugs[page]}`;
 }
 
-/** PDF reals del currículum i de la carta, servits com a fitxers estàtics. */
-export const CV_PDF = `${BASE}curriculum-jose-da-silva.pdf`;
-export const LETTER_PDF = `${BASE}carta-de-presentacio-jose-da-silva.pdf`;
+/** PDF reals del currículum i de la carta, un per idioma. */
+const CV_PDFS: Record<Lang, string> = {
+  ca: `${BASE}curriculum-jose-da-silva.pdf`,
+  es: `${BASE}curriculum-jose-da-silva-es.pdf`,
+  en: `${BASE}curriculum-jose-da-silva-en.pdf`,
+};
+
+const LETTER_PDFS: Record<Lang, string> = {
+  ca: `${BASE}carta-de-presentacio-jose-da-silva.pdf`,
+  es: `${BASE}carta-de-presentacio-jose-da-silva-es.pdf`,
+  en: `${BASE}carta-de-presentacio-jose-da-silva-en.pdf`,
+};
+
+export const cvPdf = (lang: Lang): string => CV_PDFS[lang];
+export const letterPdf = (lang: Lang): string => LETTER_PDFS[lang];

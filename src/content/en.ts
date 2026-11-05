@@ -32,6 +32,8 @@ export const en: Content = {
     langLabel: "Language",
     mainNav: "Main navigation",
     print: "Download CV (PDF)",
+    cvFile: "Resume Jose Da Silva.pdf",
+    letterFile: "Cover Letter Jose Da Silva.pdf",
     backToTop: "Back to top",
     madeWith: "Published on GitHub Pages",
     updated: "Updated October 2026",

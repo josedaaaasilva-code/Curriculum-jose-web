@@ -32,6 +32,8 @@ export interface Ui {
   langLabel: string;
   mainNav: string;
   print: string;
+  cvFile: string;
+  letterFile: string;
   backToTop: string;
   madeWith: string;
   updated: string;

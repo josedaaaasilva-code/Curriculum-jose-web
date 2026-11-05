@@ -1,6 +1,6 @@
 ---
 import type { Content } from '../content/types';
-import { pathFor, LETTER_PDF } from '../lib/paths';
+import { pathFor, letterPdf } from '../lib/paths';
 
 interface Props {
   c: Content;
@@ -16,7 +16,7 @@ const letter = c.letter;
   <h1 class="page-head__title">{letter.title}</h1>
   <p class="page-head__lead">{letter.lead}</p>
   <div class="hero__actions">
-    <a class="btn btn--ghost" href={LETTER_PDF} download="Carta de Presentacio Jose da Silva.pdf">
+    <a class="btn btn--ghost" href={letterPdf(lang)} download={c.ui.letterFile}>
       {letter.printLabel}
     </a>
     <a class="text-link" href={pathFor(lang, 'cv')}>{letter.cvCta}</a>

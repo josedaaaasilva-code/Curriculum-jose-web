@@ -32,6 +32,8 @@ export const ca: Content = {
     langLabel: 'Idioma',
     mainNav: 'Navegació principal',
     print: 'Descarrega el CV (PDF)',
+    cvFile: 'Curriculum Jose da Silva.pdf',
+    letterFile: 'Carta de Presentacio Jose da Silva.pdf',
     backToTop: 'Torna a dalt',
     madeWith: 'Publicat a GitHub Pages',
     updated: 'Actualitzat l\'octubre de 2026',
