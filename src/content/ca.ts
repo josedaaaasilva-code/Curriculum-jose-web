@@ -347,7 +347,7 @@ export const ca: Content = {
       'Estic a la vostra disposició per a una entrevista o per donar-vos qualsevol informació que necessiteu. Gràcies pel vostre temps.',
     signature: 'José da Silva',
     signatureRole: 'Tècnic en administració de sistemes i xarxes',
-    printLabel: 'Imprimeix la carta',
+    printLabel: 'Descarrega la carta (PDF)',
     cvCta: 'Veure el currículum complet',
   },
   contact: {

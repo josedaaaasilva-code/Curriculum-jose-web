@@ -129,12 +129,6 @@ const person = {
           syncTheme();
         }
 
-        document.querySelectorAll('[data-print]').forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            window.print();
-          });
-        });
-
         document.querySelectorAll('[data-phone]').forEach(function (btn) {
           btn.addEventListener('click', function () {
             var link = document.createElement('a');

@@ -347,7 +347,7 @@ export const es: Content = {
       "Quedo a vuestra disposición para una entrevista o para daros cualquier información que necesitéis. Gracias por vuestro tiempo.",
     signature: "José da Silva",
     signatureRole: "Técnico en administración de sistemas y redes",
-    printLabel: "Imprimir la carta",
+    printLabel: "Descargar la carta (PDF)",
     cvCta: "Ver el currículum completo",
   },
   contact: {

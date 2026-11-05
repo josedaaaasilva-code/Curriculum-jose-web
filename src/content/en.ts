@@ -347,7 +347,7 @@ export const en: Content = {
       "I am available for an interview or to provide any further information you may need. Thank you for your time.",
     signature: "José da Silva",
     signatureRole: "Systems and network administration technician",
-    printLabel: "Print the letter",
+    printLabel: "Download the letter (PDF)",
     cvCta: "See the full CV",
   },
   contact: {

@@ -2,7 +2,7 @@
 import type { Content } from '../content/types';
 import Section from './Section.astro';
 import ContactGrid from './ContactGrid.astro';
-import { pathFor, pdfFor } from '../lib/paths';
+import { pathFor, CV_PDF } from '../lib/paths';
 
 interface Props {
   c: Content;
@@ -22,7 +22,7 @@ const lang = c.lang;
 
       <div class="hero__actions">
         <a class="btn btn--primary" href="#contacte">{c.nav.contact}</a>
-        <a class="btn btn--ghost" href={pdfFor(lang)} download={`CV-Jose-da-Silva-${lang.toUpperCase()}.pdf`}>
+        <a class="btn btn--ghost" href={CV_PDF} download="Curriculum Jose da Silva.pdf">
           {c.ui.print}
         </a>
         <a class="text-link" href={pathFor(lang, 'letter')}>{c.nav.letter}</a>
