@@ -32,7 +32,6 @@ export interface Ui {
   langLabel: string;
   mainNav: string;
   print: string;
-  printHint: string;
   backToTop: string;
   madeWith: string;
   updated: string;

@@ -15,3 +15,8 @@ export function pathFor(lang: Lang, page: PageKey = 'home'): string {
   const prefix = lang === 'ca' ? '' : `${lang}/`;
   return `${BASE}${prefix}${slugs[page]}`;
 }
+
+/** PDF del currículum, un fitxer per idioma a l'arrel del lloc. */
+export function pdfFor(lang: Lang): string {
+  return `${BASE}cv-jose-da-silva-${lang}.pdf`;
+}

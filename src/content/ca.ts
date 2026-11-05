@@ -32,7 +32,6 @@ export const ca: Content = {
     langLabel: 'Idioma',
     mainNav: 'Navegació principal',
     print: 'Descarrega el CV (PDF)',
-    printHint: 'S\'obre el diàleg d\'impressió: tria «Desa com a PDF».',
     backToTop: 'Torna a dalt',
     madeWith: 'Publicat a GitHub Pages',
     updated: 'Actualitzat l\'octubre de 2026',

@@ -32,7 +32,6 @@ export const es: Content = {
     langLabel: "Idioma",
     mainNav: "Navegación principal",
     print: "Descargar el CV (PDF)",
-    printHint: "Se abre el diálogo de impresión: elige «Guardar como PDF».",
     backToTop: "Volver arriba",
     madeWith: "Publicado en GitHub Pages",
     updated: "Actualizado en octubre de 2026",

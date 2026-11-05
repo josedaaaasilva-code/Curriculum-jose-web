@@ -511,12 +511,6 @@ ol {
   color: var(--brand);
 }
 
-.hero__print-hint {
-  font-size: 0.76rem;
-  color: var(--muted);
-  margin-top: 0.7rem;
-}
-
 /* Fitxa d'identitat ----------------------------------------------------- */
 
 .idcard {
@@ -1530,7 +1524,6 @@ ol {
   .site-footer .footer__right,
   .skip,
   .hero__actions,
-  .hero__print-hint,
   .no-print {
     display: none !important;
   }
