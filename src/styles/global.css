@@ -511,6 +511,12 @@ ol {
   color: var(--brand);
 }
 
+.hero__print-hint {
+  font-size: 0.76rem;
+  color: var(--muted);
+  margin-top: 0.7rem;
+}
+
 /* Fitxa d'identitat ----------------------------------------------------- */
 
 .idcard {
@@ -547,16 +553,13 @@ ol {
   border-top: 0;
 }
 
-.idcard__mark {
-  font-family: var(--display);
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 1;
-  color: var(--brand);
-  letter-spacing: 0.02em;
-  padding-bottom: 1rem;
+.idcard__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 1rem;
-  border-bottom: 1px solid var(--line);
+  border: 2px solid var(--line);
 }
 
 .status {
@@ -704,80 +707,6 @@ ol {
   margin: 0;
 }
 
-/* Competències tècniques ------------------------------------------------- */
-
-.tech {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem;
-}
-
-.tech__group {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1.2rem 1.2rem 1.25rem;
-}
-
-.tech__group-title {
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 0 0 0.9rem;
-}
-
-.tech__items {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-
-.tech__item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.42rem 0.75rem 0.42rem 0.6rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--surface-2);
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease;
-}
-
-.tech__item:hover {
-  transform: translateY(-2px);
-  border-color: var(--line-strong);
-}
-
-.tech__icon {
-  flex: 0 0 auto;
-  width: 18px;
-  height: 18px;
-  background-color: var(--ink);
-  -webkit-mask: var(--icon) center / contain no-repeat;
-  mask: var(--icon) center / contain no-repeat;
-  transition: background-color 0.2s ease;
-}
-
-.tech__item:hover .tech__icon {
-  background-color: var(--brand);
-}
-
-.tech__name {
-  font-size: 0.78rem;
-  line-height: 1.2;
-  color: var(--ink-soft);
-  white-space: nowrap;
-}
-
 /* Targetes de documents ------------------------------------------------- */
 
 .cards {
@@ -884,7 +813,7 @@ ol {
 }
 
 .job__summary {
-  font-size: 0.94rem;
+  font-size: 0.93rem;
   color: var(--ink-soft);
   margin-bottom: 0.65rem;
 }
@@ -1103,27 +1032,6 @@ ol {
 
 .project .tags {
   margin-top: auto;
-}
-
-.project__link {
-  align-self: flex-start;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin-top: 0.95rem;
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--brand);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease, gap 0.2s ease;
-}
-
-.project__link:hover {
-  border-color: currentColor;
-  gap: 0.55rem;
 }
 
 /* Idiomes --------------------------------------------------------------- */
@@ -1445,14 +1353,6 @@ ol {
     font-size: 2.35rem;
   }
 
-  .tech__item {
-    padding: 0.38rem 0.65rem 0.38rem 0.55rem;
-  }
-
-  .tech__name {
-    font-size: 0.74rem;
-  }
-
   .section__num {
     font-size: 0.72rem;
   }
@@ -1506,6 +1406,8 @@ ol {
     --brand-soft: #ffffff;
     --grid-line: transparent;
     --header-bg: #ffffff;
+    --btn-ink: #000000;
+    --focus: #000000;
   }
 
   html {
@@ -1524,6 +1426,7 @@ ol {
   .site-footer .footer__right,
   .skip,
   .hero__actions,
+  .hero__print-hint,
   .no-print {
     display: none !important;
   }
@@ -1574,13 +1477,8 @@ ol {
   .study,
   .project,
   .highlight,
-  .card-link,
-  .tech__group {
+  .card-link {
     break-inside: avoid;
-  }
-
-  .tech__icon {
-    display: none;
   }
 
   .projects {
