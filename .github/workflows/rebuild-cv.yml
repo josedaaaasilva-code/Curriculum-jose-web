@@ -1,0 +1,34 @@
+name: Regenerar CV en PDF
+
+on:
+  push:
+    paths:
+      - '.github/workflows/rebuild-cv.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install fpdf2 pymupdf
+
+      - name: Generar los PDF
+        run: python3 build_cv.py
+
+      - name: Publicar los PDF y retirar el flujo temporal
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/curriculum-jose-da-silva.pdf public/curriculum-jose-da-silva-es.pdf public/curriculum-jose-da-silva-en.pdf
+          git rm --quiet build_cv.py .github/workflows/rebuild-cv.yml
+          git commit -m "Actualiza los CV en PDF (castellano, catalan e ingles)"
+          git push
