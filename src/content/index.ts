@@ -2,8 +2,13 @@ import type { Content, Lang } from './types';
 import { ca } from './ca';
 import { es } from './es';
 import { en } from './en';
+import { tech } from './tech';
 
-export const content: Record<Lang, Content> = { ca, es, en };
+export const content: Record<Lang, Content> = {
+  ca: { ...ca, tech: tech.ca },
+  es: { ...es, tech: tech.es },
+  en: { ...en, tech: tech.en },
+};
 
 export const languages: { code: Lang; label: string; short: string }[] = [
   { code: 'ca', label: 'Català', short: 'CA' },
